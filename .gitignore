@@ -1,0 +1,26 @@
+# Raw sequencing data
+data/raw/
+
+# Processed intermediate files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+*.sam
+*.bam
+*.bai
+
+# Alignment outputs
+*.sorted.bam
+
+# QC reports (generated)
+results/
+
+# Reference genome (can be downloaded again)
+reference/
+
+# Temporary files
+*.tmp
+*.log
+
