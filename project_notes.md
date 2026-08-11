@@ -90,3 +90,18 @@ will be subjected to FastQC/MultiQC again to verify the effectiveness of
 
 trimming.
 
+## Day 7 – Gene Count Matrix Preparation and QC
+
+- Prepared a gene-level count matrix from paired-end featureCounts output.
+- Used `gene_counts_paired.txt` generated with `--countReadPairs`.
+- Generated `results/05_deseq2/count_matrix.tsv`.
+- Count matrix contains 7,036 genes and two samples: SRR8556612 and SRR8556616.
+- Total assigned counts:
+  - SRR8556612: 13,519,869
+  - SRR8556616: 12,943,309
+- Genes detected:
+  - SRR8556612: 6,634 (94.29%)
+  - SRR8556616: 6,778 (96.33%)
+- Genes with zero counts in both samples: 236.
+- Examined highly expressed genes.
+- DESeq2 analysis was not performed because experimental conditions and biological replicate information still need to be verified.
