@@ -50,3 +50,29 @@ sample and the availability of biological replicates must be verified.
 
 Therefore, this stage is considered count-matrix quality assessment rather than
 formal differential-expression analysis.
+
+## Sample Correlation
+
+Pearson correlation was calculated using log2-transformed gene counts.
+
+The two samples showed a strong positive correlation:
+
+**Pearson r = 0.947**
+
+The scatter plot demonstrated a clear positive relationship between gene-level
+expression values in SRR8556612 and SRR8556616.
+
+This indicates substantial concordance between the two expression profiles.
+
+### Interpretation
+
+The strong correlation suggests that the overall gene-expression profiles of
+the two samples are similar.
+
+However, correlation alone does not establish biological reproducibility.
+The biological relationship between the samples must be verified from the
+experimental metadata before drawing biological conclusions.
+
+Output:
+
+`results/05_deseq2/sample_correlation.png`
